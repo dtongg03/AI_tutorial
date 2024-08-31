@@ -1,0 +1,14 @@
+Đầu tiên, chúng ta import các thư viện cần thiết: csv để đọc file CSV, math để tính toán, và random để xáo trộn dữ liệu.
+Hàm read_csv(filename) đọc dữ liệu từ file CSV và trả về một list các dòng.
+Hàm str_to_float(data) chuyển đổi 4 cột đầu tiên (đặc trưng) sang kiểu số thực, giữ nguyên cột cuối cùng (tên loài).
+Hàm split_data(data, ratio) chia dữ liệu thành tập huấn luyện và kiểm tra theo tỉ lệ cho trước.
+Hàm separate_by_class(data) tách dữ liệu thành các nhóm theo loài hoa.
+Hàm calculate_stats(numbers) tính trung bình và độ lệch chuẩn của một list số.
+Hàm summarize_dataset(dataset) tính toán thống kê (trung bình và độ lệch chuẩn) cho mỗi đặc trưng trong mỗi lớp.
+Hàm calculate_probability(x, mean, stdev) tính xác suất theo phân phối Gaussian.
+Hàm calculate_class_probabilities(summaries, row) tính xác suất cho mỗi lớp dựa trên các đặc trưng của một mẫu.
+Hàm predict(summaries, row) dự đoán lớp cho một mẫu dựa trên xác suất cao nhất.
+Hàm evaluate_model(dataset, model) đánh giá mô hình bằng cách tính độ chính xác trên tập dữ liệu.
+Hàm naive_bayes(train) huấn luyện mô hình Naive Bayes.
+Hàm run_experiment(data, n_folds) thực hiện k-fold cross-validation để đánh giá mô hình.
+Cuối cùng, chương trình chính đọc dữ liệu, chuyển đổi kiểu dữ liệu, chạy thử nghiệm và in kết quả.
